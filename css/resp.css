@@ -1,0 +1,229 @@
+@media only screen and (max-width:1004px) {
+    .burger {
+        display: block;
+        cursor: pointer;
+        transition: all 1s ease-in;
+    }
+    .navigation {
+        height: 50px;
+    }
+    .nav-div img {
+        position: absolute;
+        top: -25px;
+        width: 50px;
+        height: 40px;
+    }
+    .nav-div {
+        position: absolute;
+        top: 2px;
+    }
+    .ad-page {
+        flex-direction: column;
+    }
+    .left {
+        width: 99vw;
+        padding-bottom: 1rem;
+    }
+    /* nav-responsive part design */
+    .left-right {
+        position: fixed;
+        flex-direction: column;
+        top: 50px;
+        right: 0px;
+        width: 74vw;
+        height: 80%;
+        background-color: white;
+        z-index: 9;
+        transform: translateX(100%);
+        box-shadow: 0px 0px 2px inset;
+        transition: all 0.6s ease-in-out;
+    }
+    .services h1 {
+        font-size: 1.5rem;
+    }
+    .cont {
+        transform: translate(83px, 35px);
+        width: 50vw;
+    }
+    .cont-top {
+        font-size: 1.1rem;
+    }
+    .extras-top,
+    .sec-top {
+        font-size: 1.5rem;
+    }
+    .top {
+        font-size: 2rem!important;
+        display: block;
+        width: 128px;
+        text-align: left;
+    }
+    .subtitle {
+        margin: 14px;
+        font-size: 1rem;
+    }
+    .down {
+        padding-bottom: 1rem;
+    }
+    .show-right {
+        transform: translateX(0%);
+    }
+    /* finished */
+    .nav-list {
+        flex-direction: column;
+    }
+    .right-nav {
+        flex-direction: column-reverse;
+    }
+    .nav-items {
+        padding: 30px 10px;
+    }
+    .right-nav {
+        padding: 0rem 2rem;
+    }
+    .bt-nav {
+        margin-bottom: 2rem;
+    }
+    .barrier {
+        visibility: visible;
+        width: 20rem;
+        margin: 0px auto;
+        background: #80006a2e;
+    }
+    .right {
+        display: none;
+    }
+    .service-cont {
+        flex-direction: column;
+    }
+    .service-cont p {
+        padding: 0rem 2rem;
+    }
+    .image-sec {
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    .inner-sec img {
+        width: 175px;
+        height: 170px;
+    }
+    .food-bottom {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+    .food-head {
+        font-size: 1.2rem;
+    }
+    .extras-sub {
+        padding: 0rem 5rem;
+    }
+    .extras-sec {
+        flex-direction: column;
+    }
+    .extras-div h2 {
+        padding: 1rem;
+    }
+    .extras-div {
+        padding-bottom: 2rem;
+    }
+    .extras-div p {
+        padding-bottom: 2.5rem;
+        font-size: 0.8rem;
+    }
+    .sec-sub {
+        font-size: 1rem;
+        padding: 2rem 3rem;
+    }
+    .pay1 {
+        flex-direction: column;
+        width: 88vw;
+        padding-bottom: 1.6rem;
+    }
+    .pay-sub-txt {
+        width: 30vw;
+    }
+    .pay-sub-txt h2 {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .pay-sub-txt p {
+        font-size: 1rem;
+    }
+    .pay-inner {
+        width: 85vw;
+        padding: 4rem 4px;
+    }
+    .pay-in {
+        margin: 3rem auto;
+        padding: 2rem;
+    }
+    .benefit-term {
+        flex-direction: column;
+    }
+    .benefits,
+    .terms {
+        width: 97%;
+    }
+    .client-items li {
+        padding: 15px 4px;
+    }
+    .about-sec {
+        flex-direction: column;
+    }
+    .starcodes input {
+        font-size: 1rem;
+        padding: 4px 4px;
+        width: 50%;
+        margin: 0px auto;
+    }
+    .starcodes button {
+        font-size: 1rem;
+    }
+    .about-in {
+        width: 80vw;
+    }
+    .about-in h2 {
+        font-size: 1rem;
+    }
+    .about-in li {
+        font-size: 0.9rem;
+    }
+    /* About us js application */
+    .about-in-ul {
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.6s ease-in-out;
+    }
+    .show-ul {
+        height: 278px;
+    }
+    .shrink {
+        display: none;
+        position: absolute;
+        right: 3px;
+    }
+    .expand {
+        position: absolute;
+        right: 3px;
+        display: inline-block;
+    }
+    .about-db-in {
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+        padding: 10px 2px;
+    }
+    /* Here will be a space to add more classes;noted */
+    .policy {
+        flex-direction: column;
+    }
+    .policy span {
+        display: none;
+    }
+    .policy a {
+        padding: 5px 4px;
+    }
+    .lg {
+        width: 21px;
+    }
+}

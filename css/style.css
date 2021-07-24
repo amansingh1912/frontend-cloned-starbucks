@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    /* border: 1px solid black; */
+}
+
+.navigation {
+    display: flex;
+}
+
+.burger {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: black;
+    display: none;
+    cursor: pointer;
+    transition: all 1s ease-in;
+}
+
+.left-right {
+    display: flex;
+}
+
+.left-nav {
+    display: flex;
+    width: 70vw;
+}
+
+.nav-div img {
+    height: 64px;
+    width: 78px;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    margin-top: 48px;
+    padding-left: 2rem;
+}
+
+.nav-items {
+    list-style: none;
+    margin: 0px 6px;
+    padding: 4px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 32px;
+    /* Here, to clone exactly to the site padding was required to shift it down */
+}
+
+.nav-items a:focus {
+    border-bottom: 5px solid green;
+    /* it was an important property to bring the line on bottom on nav-list items */
+    transition: all 1s ease-in-out;
+}
+
+.right-nav {
+    display: flex;
+    margin-top: 48px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    /* background-color: black; */
+    display: none;
+    cursor: pointer;
+    transition: all 1s ease-in;
+}
+
+.bt-nav {
+    display: flex;
+}
+
+.barrier {
+    visibility: hidden;
+}
+
+.store {
+    display: flex;
+}
+
+.fa-map-marker {
+    display: inline-block;
+}
+
+.store p {
+    display: inline-block;
+}
+
+.btn {
+    border: 2px solid black;
+    width: 75px;
+    height: 32px;
+    margin-right: 25px;
+    border-radius: 20px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.sign-in {
+    background: transparent;
+    color: black;
+}
+
+.join-now {
+    background: black;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+}
+
+.fa {
+    margin-right: 29px;
+    margin-top: 4px;
+    font-size: 22px;
+    /* display: none; */
+}
+
+p {
+    font-size: 1rem;
+    display: block;
+    margin: 5px;
+    margin-right: 23px;
+}
+
+.line {
+    width: 99vw;
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad-page {
+    display: flex;
+}
+
+.left {
+    width: 65vw;
+    background-color: #73a7a830;
+    height: 70vh;
+}
+
+.cont {
+    transform: translate(130px, 154px);
+    width: 50vw;
+}
+
+.right {
+    width: 35vw;
+    height: 70vh;
+}
+
+.right {
+    background: url("../img/star.jpg") no-repeat center/cover;
+}
+
+.top {
+    padding: 2px 5px;
+    font-size: 3.1rem!important;
+}
+
+.down {
+    padding-bottom: 4rem;
+}
+
+.subtitle {
+    margin: 20px;
+    font-size: 1.4rem;
+    color: #614a4a;
+}
+
+.join-now {
+    font-size: 1em;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    color: white;
+    background-color: green;
+    padding: 5px 2px;
+    margin: 0px 16px;
+}
+
+.services {
+    margin-top: 5rem;
+}
+
+.services h1,
+.services h4 {
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 2.3rem;
+}
+
+.service-cont {
+    display: flex;
+}
+
+.sections {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.sections img {
+    margin: 2.5rem auto;
+    width: 50px;
+    height: 50px;
+}
+
+.services h4 {
+    padding-top: 10px;
+    font-weight: 100;
+}
+
+.cont-top {
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.client-page {
+    margin-top: 6rem;
+    background-color: rgb(158 191 217 / 18%);
+}
+
+.client-page h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2.9rem;
+}
+
+.client-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-items li {
+    list-style: none;
+    padding: 15px 14px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.client-items li:hover {
+    border-bottom: 5px solid green;
+}
+
+.fa-star-o {
+    color: rgb(223, 174, 51);
+}
+
+.image-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144 172 209 / 10%);
+    box-shadow: 0px 0px 4px inset #0000ff52;
+}
+
+.inner-sec img {
+    width: 250px;
+    height: 250px;
+}
+
+.sub-sec {
+    margin-left: 4rem;
+}
+
+.food-head {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.food-bottom {
+    text-align: center;
+}
+
+
+/* This lower section styling is the most important section where we apply js:- */
+
+.first-div {
+    display: flex;
+}
+
+.second-div {
+    display: none;
+}
+
+.third-div {
+    display: none;
+}
+
+.fourth-div {
+    display: none;
+}
+
+
+/* it is done till here */
+
+.extras-top,
+.sec-top {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 2rem;
+}
+
+.extras-sub,
+.sec-sub {
+    padding: 0rem 14rem;
+    font-size: 1.2rem;
+    font-weight: 540;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.extras-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extras-div {
+    text-align: center;
+}
+
+.extras-div img {
+    height: 80px;
+    width: 80px;
+    margin: 0px 30px;
+}
+
+.extras-div p {
+    padding: 10px 5rem;
+    text-align: center;
+}
+
+.extras-div h2 {
+    margin-top: 1rem;
+    padding: 1.4rem;
+}
+
+.payment {
+    background-color: #d1bea636;
+    margin-top: 5.8rem;
+}
+
+.pay1 {
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+    margin: auto;
+}
+
+.pay-inner {
+    display: flex;
+    width: 33vw;
+}
+
+.sec-pay {
+    text-align: left;
+}
+
+.pay-sub-inner img {
+    width: 139px;
+    height: 178px;
+    margin-right: 1.5rem;
+}
+
+.sep {
+    width: 60vw;
+    margin: 2rem auto;
+}
+
+.starcodes input {
+    text-align: left;
+    padding: 4px 8px;
+    display: block;
+    margin: 2px auto;
+    font-size: 1.2rem;
+    width: 30%;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.starcodes button {
+    display: block;
+    cursor: pointer;
+    margin: 1% 64%;
+    font-size: 1.2rem;
+    border: 2px solid rgba(126, 94, 94, 0.822);
+    border-radius: 1rem;
+    padding: 4px 8px;
+    background: white;
+}
+
+.st-btn:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.397);
+}
+
+.sec-star {
+    width: 40vw;
+    margin: 7rem auto;
+}
+
+.sec-star-top {
+    margin-bottom: 2rem;
+}
+
+.more-info {
+    background-color: #80808014;
+    box-shadow: 0px 0px 4px inset #0f0f0e42;
+}
+
+.benefit-term {
+    display: flex;
+    margin: 2.2rem auto;
+    padding-bottom: 2.9rem;
+    /* width: 80vw; */
+}
+
+.benefit-term p {
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
+
+.low {
+    margin: 1rem 0rem;
+    padding-right: 10px;
+}
+
+.benefit-term h4 {
+    padding: 2rem 1rem;
+}
+
+.benefits {
+    width: 50%;
+    padding: 5px;
+}
+
+.terms {
+    width: 50%;
+}
+
+.ben {
+    padding: 1.2rem 0rem;
+}
+
+.more-sub {
+    margin: 0rem 12rem;
+    padding-top: 33px;
+}
+
+#sep2 {
+    height: 0.1em;
+    box-shadow: 2px 1px 1px inset rgba(32, 31, 31, 0.5);
+    color: grey;
+}
+
+.aboutus {
+    width: 55vw;
+    margin: 2% 10%;
+}
+
+.about-sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-in li {
+    list-style: none;
+    padding: 14px 4px;
+}
+
+.about-in a {
+    text-decoration: none;
+    color: rgb(136, 130, 130);
+}
+
+.about-in h2 {
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.expand,
+.shrink {
+    display: none;
+}
+
+footer {
+    margin: 0 10%;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+}
+
+.logos {
+    display: flex;
+}
+
+.lg {
+    margin: 0 0.4rem;
+    cursor: pointer;
+}
+
+.policy {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+}
+
+.policy a {
+    text-decoration: none;
+    color: black;
+}
+
+.copyright {
+    margin: 1.5rem 0rem;
+}
