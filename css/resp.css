@@ -20,7 +20,7 @@
     .ad-page {
         flex-direction: column;
     }
-      /* Dark mode applied */
+    /* Dark mode applied */
     .sign-in {
         background: white;
         color: black;
@@ -47,7 +47,7 @@
         right: 0px;
         width: 74vw;
         height: 80%;
-        background-color: white;
+        background-color: black;
         z-index: 9;
         transform: translateX(100%);
         box-shadow: 0px 0px 2px inset;
@@ -101,9 +101,9 @@
     }
     .barrier {
         visibility: visible;
-        width: 20rem;
+        width: 15rem;
         margin: 0px auto;
-        background: #80006a2e;
+        background: rgb(144 172 209 / 10%);
     }
     .right {
         display: none;
