@@ -20,6 +20,21 @@
     .ad-page {
         flex-direction: column;
     }
+      /* Dark mode applied */
+    .sign-in {
+        background: white;
+        color: black;
+    }
+    .nav-items a {
+        color: white;
+    }
+    .store p {
+        color: white;
+    }
+    .fa-map-marker {
+        filter: invert(1);
+    }
+    /* //dark mode end */
     .left {
         width: 99vw;
         padding-bottom: 1rem;
