@@ -24,71 +24,92 @@ aboutUl = document.querySelectorAll(".about-in-ul");
 
 //About us part js handling
 
-expand[0].addEventListener("click", function() {
+// expand[0].addEventListener("click", function() {
 
-    aboutUl[0].classList.add("show-ul");
-    expand[0].style.display = "none";
-    shrink[0].style.display = "flex";
-})
-shrink[0].addEventListener("click", function() {
+//     aboutUl[0].classList.add("show-ul");
+//     expand[0].style.display = "none";
+//     shrink[0].style.display = "flex";
+// })
+// shrink[0].addEventListener("click", function() {
 
-    aboutUl[0].classList.remove("show-ul");
-    shrink[0].style.display = "none";
-    expand[0].style.display = "flex";
-})
-expand[1].addEventListener("click", function() {
+//     aboutUl[0].classList.remove("show-ul");
+//     shrink[0].style.display = "none";
+//     expand[0].style.display = "flex";
+// })
+// expand[1].addEventListener("click", function() {
 
-    aboutUl[1].classList.add("show-ul");
-    expand[1].style.display = "none";
-    shrink[1].style.display = "flex";
-})
+//     aboutUl[1].classList.add("show-ul");
+//     expand[1].style.display = "none";
+//     shrink[1].style.display = "flex";
+// })
 
-shrink[1].addEventListener("click", function() {
+// shrink[1].addEventListener("click", function() {
 
-    aboutUl[1].classList.remove("show-ul");
-    shrink[1].style.display = "none";
-    expand[1].style.display = "flex";
-})
-expand[2].addEventListener("click", function() {
+//     aboutUl[1].classList.remove("show-ul");
+//     shrink[1].style.display = "none";
+//     expand[1].style.display = "flex";
+// })
+// expand[2].addEventListener("click", function() {
 
-    aboutUl[2].classList.add("show-ul");
-    expand[2].style.display = "none";
-    shrink[2].style.display = "flex";
-})
+//     aboutUl[2].classList.add("show-ul");
+//     expand[2].style.display = "none";
+//     shrink[2].style.display = "flex";
+// })
 
-shrink[2].addEventListener("click", function() {
+// shrink[2].addEventListener("click", function() {
 
-    aboutUl[2].classList.remove("show-ul");
-    shrink[2].style.display = "none";
-    expand[2].style.display = "flex";
-})
+//     aboutUl[2].classList.remove("show-ul");
+//     shrink[2].style.display = "none";
+//     expand[2].style.display = "flex";
+// })
 
-expand[3].addEventListener("click", function() {
+// expand[3].addEventListener("click", function() {
 
-    aboutUl[3].classList.add("show-ul");
-    expand[3].style.display = "none";
-    shrink[3].style.display = "flex";
-})
+//     aboutUl[3].classList.add("show-ul");
+//     expand[3].style.display = "none";
+//     shrink[3].style.display = "flex";
+// })
 
-shrink[3].addEventListener("click", function() {
+// shrink[3].addEventListener("click", function() {
 
-    aboutUl[3].classList.remove("show-ul");
-    shrink[3].style.display = "none";
-    expand[3].style.display = "flex";
-})
-expand[4].addEventListener("click", function() {
+//     aboutUl[3].classList.remove("show-ul");
+//     shrink[3].style.display = "none";
+//     expand[3].style.display = "flex";
+// })
+// expand[4].addEventListener("click", function() {
 
-    aboutUl[4].classList.add("show-ul");
-    expand[4].style.display = "none";
-    shrink[4].style.display = "flex";
-})
+//     aboutUl[4].classList.add("show-ul");
+//     expand[4].style.display = "none";
+//     shrink[4].style.display = "flex";
+// })
 
-shrink[4].addEventListener("click", function() {
+// shrink[4].addEventListener("click", function() {
 
-    aboutUl[4].classList.remove("show-ul");
-    shrink[4].style.display = "none";
-    expand[4].style.display = "flex";
-})
+//     aboutUl[4].classList.remove("show-ul");
+//     shrink[4].style.display = "none";
+//     expand[4].style.display = "flex";
+// })
+
+//Optimized code: alternate way 
+
+expand = document.querySelectorAll(".expand");
+shrink = document.querySelectorAll(".shrink");
+aboutUl = document.querySelectorAll(".about-in-ul");
+
+for (let i = 0; i < 5; i++) {
+    expand[i].addEventListener("click", function() {
+        aboutUl[i].classList.add("show-ul");
+        expand[i].style.display = "none";
+        shrink[i].style.display = "flex";
+    });
+}
+for (let i = 0; i < 5; i++) {
+    shrink[i].addEventListener("click", function() {
+        aboutUl[i].classList.remove("show-ul");
+        shrink[i].style.display = "flex";
+        expand[i].style.display = "none";
+    });
+}
 
 
 
@@ -110,11 +131,22 @@ shrink[4].addEventListener("click", function() {
 
 //Method 2: alternate
 
+
+
+
+
+
+
+
+
+
 if (burger) {
     burger.addEventListener("click", function() {
         leftRight.classList.add("show-right");
         burger.style.display = "none";
         closeBtn.style.display = "block";
+        //important one:
+        document.getElementsByTagName("body")[0].style.position = "fixed";
     })
 
 }
@@ -124,6 +156,8 @@ if (closeBtn) {
         leftRight.classList.remove("show-right");
         burger.style.display = "block";
         closeBtn.style.display = "none";
+        //important one:
+        document.getElementsByTagName("body")[0].style.position = "inherit";
     })
 }
 
