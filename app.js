@@ -92,23 +92,25 @@ aboutUl = document.querySelectorAll(".about-in-ul");
 
 //Optimized code: alternate way 
 
-expand = document.querySelectorAll(".expand");
-shrink = document.querySelectorAll(".shrink");
-aboutUl = document.querySelectorAll(".about-in-ul");
 
-for (let i = 0; i < 5; i++) {
-    expand[i].addEventListener("click", function() {
-        aboutUl[i].classList.add("show-ul");
-        expand[i].style.display = "none";
-        shrink[i].style.display = "flex";
-    });
+if (expand) {
+    for (let i = 0; i < 5; i++) {
+        expand[i].addEventListener("click", function() {
+            aboutUl[i].classList.add("show-ul");
+            expand[i].style.display = "none";
+            shrink[i].style.display = "flex";
+        });
+    }
 }
-for (let i = 0; i < 5; i++) {
-    shrink[i].addEventListener("click", function() {
-        aboutUl[i].classList.remove("show-ul");
-        shrink[i].style.display = "flex";
-        expand[i].style.display = "none";
-    });
+
+if (shrink) {
+    for (let i = 0; i < 5; i++) {
+        shrink[i].addEventListener("click", function() {
+            aboutUl[i].classList.remove("show-ul");
+            shrink[i].style.display = "none";
+            expand[i].style.display = "flex";
+        });
+    }
 }
 
 
