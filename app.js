@@ -145,8 +145,9 @@ if (burger) {
         leftRight.classList.add("show-right");
         burger.style.display = "none";
         closeBtn.style.display = "block";
-        //important one:
-        document.getElementsByTagName("body")[0].style.position = "fixed";
+
+        //important one but "closebtn" gets removed in the mobile version
+        // document.getElementsByTagName("body")[0].style.position = "fixed";
     })
 
 }
@@ -157,7 +158,7 @@ if (closeBtn) {
         burger.style.display = "block";
         closeBtn.style.display = "none";
         //important one:
-        document.getElementsByTagName("body")[0].style.position = "inherit";
+        // document.getElementsByTagName("body")[0].style.position = "inherit";
     })
 }
 
